@@ -23,7 +23,7 @@ function setMoodleSessionCookie(cookieValue) {
     });
 }
 
-chrome.webNavigation.onCompleted.addListener((details) => {
+chrome.webNavigation.onCommitted.addListener((details) => {
 	chrome.storage.local.get(['moodleSession'], (data) => {
 		if (data.moodleSession) {
 			setMoodleSessionCookie(data.moodleSession);
