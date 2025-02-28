@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Fuck the KLMS login",
   "version": "1.0",
-  "permissions": ["cookies", "storage", "activeTab"],
+  "permissions": ["cookies", "storage", "webNavigation"],
   "host_permissions": ["https://klms.kaist.ac.kr/*"],
   "background": {
      "service_worker": "background.js"
