@@ -1,4 +1,4 @@
-await fetch(chrome.runtime.getURL('config.json'))
+fetch(chrome.runtime.getURL('config.json'))
     .then(response => response.json())
     .then(config => {
 	if (config.MOODLE_SESSION) {
