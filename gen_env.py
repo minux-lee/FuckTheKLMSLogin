@@ -5,7 +5,7 @@ def gen_env_file(moddle_session: str):
     env_file.write(f"MODDLE_SESSION={moddle_session}")
     env_file.close()
 
-    config_file = open("config.json", "w")
+    config_file = open("extension/config.json", "w")
     config = {
         'MOODLE_SESSION': moddle_session
     }
