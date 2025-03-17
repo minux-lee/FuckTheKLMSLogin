@@ -1,13 +1,13 @@
 import json
 
-def gen_env_file(moddle_session: str):
+def gen_env_file(moodle_session: str):
     env_file = open("server/.env", "w")
-    env_file.write(f"MODDLE_SESSION={moddle_session}")
+    env_file.write(f"MOODLE_SESSION={moodle_session}")
     env_file.close()
 
     config_file = open("extension/config.json", "w")
     config = {
-        'MOODLE_SESSION': moddle_session
+        'MOODLE_SESSION': moodle_session
     }
 
     config_file.write(json.dumps(config))
