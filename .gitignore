@@ -3,6 +3,5 @@
 **/dist
 *.log
 *.swp
-
+*.zip
 **/config.json
-
