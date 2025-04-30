@@ -1,3 +1,31 @@
+# Xcode build and derived data
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Xcode user settings
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.mode2v3
+*.xcodeproj/*.perspectivev3
+*.xcuserstate
+
+# Logs and diagnostics
+*.log
+*.xcscmblueprint
+
+# macOS system files
+.DS_Store
+
+# Safari extension state
+*.appex/
+
+# Converted intermediate folders
+*.web-extension-backup/
+*.web-extension-converted/
+
 *.env
 **/node_modules
 **/dist
